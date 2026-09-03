@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Character } from "../types/character";
-import { getCharacters } from "../services/rickAndMortyApi";
+import { getRandomCharacters } from "../services/rickAndMortyApi";
 import CharacterCard from "../components/CharacterCard";
 
 function CharactersPage() {
@@ -9,7 +9,7 @@ function CharactersPage() {
   useEffect(() => {
     // Load characters logic here
     async function loadCharacters() {
-      const charactersData = await getCharacters();
+      const charactersData = await getRandomCharacters();
       setCharacters(charactersData);
     }
 
