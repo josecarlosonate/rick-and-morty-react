@@ -1,4 +1,6 @@
-[English](#rick-and-morty-characters) | [Español](#-rick-and-morty-characters-1)
+[English](#english) | [Español](#espanol)
+
+<a id="english"></a>
 
 # Rick and Morty Characters
 
@@ -43,11 +45,11 @@ npm run dev
 
 ## API
 
-This project uses the Rick and Morty REST API:
-
-https://rickandmortyapi.com/
+This project uses the Rick and Morty REST API.
 
 ---
+
+<a id="espanol"></a>
 
 # 🇪🇸 Rick and Morty Characters
 
@@ -92,6 +94,4 @@ npm run dev
 
 ## API
 
-Este proyecto utiliza la API REST de Rick and Morty:
-
-https://rickandmortyapi.com/
+Este proyecto utiliza la API REST de Rick and Morty.
