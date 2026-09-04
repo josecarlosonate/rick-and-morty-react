@@ -1,75 +1,97 @@
-# React + TypeScript + Vite
+[English](#rick-and-morty-characters) | [Español](#-rick-and-morty-characters-1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Rick and Morty Characters
 
-Currently, two official plugins are available:
+A React application that consumes the Rick and Morty API to display and search for characters from the series.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Displays 20 random characters
+- Search characters by name
+- Character detail page
+- Responsive design
+- Integration with the Rick and Morty REST API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Rick and Morty API
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clone the repository:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone https://github.com/josecarlosonate/rick-and-morty-react.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
 ```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+## API
+
+This project uses the Rick and Morty REST API:
+
+https://rickandmortyapi.com/
+
+---
+
+# 🇪🇸 Rick and Morty Characters
+
+Aplicación desarrollada con React que consume la API de Rick and Morty para mostrar y buscar personajes de la serie.
+
+## Funcionalidades
+
+- Muestra 20 personajes aleatorios
+- Búsqueda de personajes por nombre
+- Página de detalle de cada personaje
+- Diseño responsive
+- Integración con la API REST de Rick and Morty
+
+## Tecnologías
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Rick and Morty API
+
+## Instalación y ejecución
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/josecarlosonate/rick-and-morty-react.git
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Ejecuta el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+## API
+
+Este proyecto utiliza la API REST de Rick and Morty:
+
+https://rickandmortyapi.com/
