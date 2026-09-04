@@ -47,6 +47,8 @@ npm run dev
 
 This project uses the Rick and Morty REST API.
 
+https://rickandmortyapi.com/
+
 ---
 
 <a id="espanol"></a>
@@ -95,3 +97,5 @@ npm run dev
 ## API
 
 Este proyecto utiliza la API REST de Rick and Morty.
+
+https://rickandmortyapi.com/
