@@ -18,36 +18,52 @@ function CharacterDetailsPage() {
   }, [id]);
 
   if (!character) {
-    return <p>Loading character...</p>;
+    return <p className="p-8 text-center text-slate-600">Loading character...</p>;
   }
 
   return (
-    <main>
-      <Link to="/">Back to characters</Link>
+    <main className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+      <Link
+        to="/"
+        className="mb-6 inline-flex font-semibold text-emerald-700 transition-colors hover:text-emerald-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+      >
+        Back to characters
+      </Link>
 
-      <article>
+      <article className="overflow-hidden rounded-xl bg-white shadow-lg md:grid md:grid-cols-2">
         <img
           src={character.image}
           alt={character.name}
+          className="aspect-square w-full object-cover md:h-full"
         />
 
-        <h1>{character.name}</h1>
+        <div className="flex flex-col justify-center gap-4 p-6 sm:p-8">
+          <h1 className="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">
+            {character.name}
+          </h1>
 
-        <p>
-          <strong>Status:</strong> {character.status}
-        </p>
+          <div className="space-y-3 text-slate-600">
+            <p>
+              <strong className="font-semibold text-slate-800">Status:</strong>{" "}
+              {character.status}
+            </p>
 
-        <p>
-          <strong>Species:</strong> {character.species}
-        </p>
+            <p>
+              <strong className="font-semibold text-slate-800">Species:</strong>{" "}
+              {character.species}
+            </p>
 
-        <p>
-          <strong>Gender:</strong> {character.gender}
-        </p>
+            <p>
+              <strong className="font-semibold text-slate-800">Gender:</strong>{" "}
+              {character.gender}
+            </p>
 
-        <p>
-          <strong>Origin:</strong> {character.origin.name}
-        </p>
+            <p>
+              <strong className="font-semibold text-slate-800">Origin:</strong>{" "}
+              {character.origin.name}
+            </p>
+          </div>
+        </div>
       </article>
     </main>
   );
